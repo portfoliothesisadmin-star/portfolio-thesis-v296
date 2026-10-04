@@ -1,0 +1,794 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Portfolio Thesis V228</title>
+<!-- ORIGINAL STYLE BLOCK 1 EXTRACTED TO styles.css --><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<!-- ORIGINAL STYLE BLOCK 2 EXTRACTED TO styles.css -->
+
+<!-- ORIGINAL STYLE BLOCK 3 EXTRACTED TO styles.css -->
+<!-- Portfolio Thesis V117: Combined Holding Intelligence -->
+<!-- Portfolio Thesis V122: Research Universe Dashboard -->
+
+<!-- ORIGINAL STYLE BLOCK 4 EXTRACTED TO styles.css -->
+<!-- Portfolio Thesis V128: Internal Research Access -->
+<!-- ORIGINAL STYLE BLOCK 5 EXTRACTED TO styles.css --><!-- ORIGINAL STYLE BLOCK 6 EXTRACTED TO styles.css --><!-- ORIGINAL STYLE BLOCK 7 EXTRACTED TO styles.css --><!-- ORIGINAL STYLE BLOCK 8 EXTRACTED TO styles.css -->
+<!-- ORIGINAL STYLE BLOCK 9 EXTRACTED TO styles.css -->
+
+
+<!-- ORIGINAL STYLE BLOCK 10 EXTRACTED TO styles.css -->
+
+<!-- ORIGINAL STYLE BLOCK 11 EXTRACTED TO styles.css -->
+
+
+<!-- ORIGINAL STYLE BLOCK 12 EXTRACTED TO styles.css -->
+
+<!-- ORIGINAL STYLE BLOCK 13 EXTRACTED TO styles.css -->
+
+<!-- ORIGINAL STYLE BLOCK 14 EXTRACTED TO styles.css -->
+
+<!-- ORIGINAL STYLE BLOCK 15 EXTRACTED TO styles.css -->
+
+<!-- ORIGINAL STYLE BLOCK 16 EXTRACTED TO styles.css -->
+
+
+<!-- ORIGINAL STYLE BLOCK 17 EXTRACTED TO styles.css -->
+
+
+<!-- ORIGINAL STYLE BLOCK 18 EXTRACTED TO styles.css -->
+
+
+<!-- ORIGINAL STYLE BLOCK 19 EXTRACTED TO styles.css -->
+
+
+<!-- ORIGINAL STYLE BLOCK 20 EXTRACTED TO styles.css -->
+
+
+<!-- ORIGINAL STYLE BLOCK 21 EXTRACTED TO styles.css -->
+
+
+<!-- ORIGINAL STYLE BLOCK 22 EXTRACTED TO styles.css -->
+
+
+<!-- ORIGINAL STYLE BLOCK 23 EXTRACTED TO styles.css -->
+
+
+<!-- ORIGINAL STYLE BLOCK 24 EXTRACTED TO styles.css -->
+
+
+<!-- ORIGINAL STYLE BLOCK 25 EXTRACTED TO styles.css -->
+
+
+<!-- ORIGINAL STYLE BLOCK 26 EXTRACTED TO styles.css -->
+
+
+<!-- ORIGINAL STYLE BLOCK 27 EXTRACTED TO styles.css -->
+
+
+<!-- ORIGINAL STYLE BLOCK 28 EXTRACTED TO styles.css -->
+</head><body>
+<header><div class="wrap nav">
+<div class="brand"><b>Portfolio Thesis</b><div class="tagline">Global Ownership. Disciplined Balance.</div></div>
+<nav class="links">
+<a href="#" onclick="ptReturnHome();return false;">Home</a>
+<a href="#" onclick="ptGoPortfolio();return false;">Build a portfolio</a>
+<a href="#" onclick="ptGoCompany();return false;">Analyze a company</a>
+<a href="#" onclick="ptGoLearn();return false;">Academy</a>
+<a href="#" onclick="ptGoAccount();return false;">Library</a>
+<a class="btn" href="#" onclick="ptOpenExistingSection('join');return false;">Join — $15/mo</a>
+</nav>
+<div class="navright"><button id="headerAccount" class="accounthead" onclick="showAccountInfo()" aria-label="Account">♙</button><button class="hamb" onclick="menu()" aria-label="Menu">☰</button></div>
+</div>
+<div class="mobile" id="mobile">
+<a href="#" onclick="ptReturnHome();closeMobileMenu();return false;">Home</a>
+<a href="#" onclick="ptGoPortfolio();closeMobileMenu();return false;">Build a portfolio</a>
+<a href="#" onclick="ptGoCompany();closeMobileMenu();return false;">Analyze a company</a>
+<a href="#" onclick="ptGoLearn();closeMobileMenu();return false;">Academy</a>
+<a href="#" onclick="ptGoAccount();closeMobileMenu();return false;">Library</a>
+<div class="pt-mobile-internal-label">PORTFOLIO THESIS RESEARCH · INTERNAL</div>
+<a href="#" onclick="ptOpenResearchUniverseDashboard();closeMobileMenu();return false;">Research Universe</a>
+<a href="#" onclick="ptOpenModelPortfoliosInternal();closeMobileMenu();return false;">Model Portfolios <span style="opacity:.62">— next phase</span></a>
+<a href="#" onclick="ptOpenExistingSection('join');closeMobileMenu();return false;">Membership — $15/mo</a>
+</div></header>
+<section id="reportHome" class="pt-report-home pt221-home">
+  <div class="pt221-hero">
+    <div class="eyebrow">PORTFOLIO THESIS</div>
+    <h1>Understand what you own.<br>Know why you own it.</h1>
+  </div>
+
+  <div class="pt221-primary-grid">
+    <button class="pt221-primary-card" onclick="ptGoPortfolio()">
+      <span class="pt221-kicker">START HERE</span>
+      <b>Build your portfolio</b>
+      <small>Enter holdings and weights. We’ll turn the allocation into a Portfolio Thesis Report.</small>
+      <span class="pt221-action">Build a portfolio <i>→</i></span>
+    </button>
+    <button class="pt221-library-card" onclick="ptGoAccount()">
+      <span class="pt221-kicker">RETURNING MEMBER</span>
+      <b>Open your Library</b>
+      <small>Return to saved portfolios, reports, review history and watchlists.</small>
+      <span class="pt221-action">View saved research <i>→</i></span>
+    </button>
+  </div>
+
+  <div class="pt221-process" aria-label="Portfolio Thesis workflow">
+    <div class="pt221-process-head"><span>THE PORTFOLIO THESIS PROCESS</span><small>One continuous research loop</small></div>
+    <div class="pt221-steps">
+      <div class="pt221-step"><em>01</em><div><b>Build</b><small>Define what you own and how much each holding matters.</small></div></div>
+      <div class="pt221-step"><em>02</em><div><b>Understand</b><small>See roles, exposures, performance drivers and the evidence behind the portfolio.</small></div></div>
+      <div class="pt221-step"><em>03</em><div><b>Review</b><small>Revisit the portfolio later and see whether the thesis—not just the price—changed.</small></div></div>
+    </div>
+  </div>
+
+  <div class="pt221-secondary">
+    <button onclick="ptGoCompany()"><span><b>Analyze a company</b><small>Financial evidence, valuation, Margin of Safety and market expectations.</small></span><i>→</i></button>
+    <button onclick="ptGoLearn()"><span><b>Academy</b><small>Understand the concepts used throughout your reports.</small></span><i>→</i></button>
+  </div>
+</section>
+
+<main><section class="hero"><div class="wrap"><div class="eyebrow">PORTFOLIO INTELLIGENCE FOR LONG-TERM INVESTORS</div><h1>Bring your portfolio.<br>Understand the argument behind it.</h1><p class="lead">Enter the securities you actually own. Portfolio Thesis interprets their roles, exposures and overlapping bets—and turns an allocation into a thesis you can understand and monitor.</p>
+<div class="benefits"><div class="benefit"><div class="icon">▥</div><div><b>Any supported security</b><span class="muted">Stocks, ETFs, bonds, REITs and more</span></div></div><div class="benefit"><div class="icon">◕</div><div><b>Clear analysis</b><span class="muted">Roles, exposures and overlap</span></div></div><div class="benefit"><div class="icon">◇</div><div><b>Educational</b><span class="muted">Learn and build a stronger thesis</span></div></div></div></div></section>
+
+<section id="builder" class="section"><div class="wrap"><div class="card builder"><div class="builder-head"><div><h2>Build Your Portfolio</h2><p class="muted">Add the securities you own and their allocation percentages. Portfolio Thesis identifies their roles, exposures and relationships.</p></div><div id="total" class="total">100% total</div></div>
+<div class="pt-portfolio-name-wrap"><label for="ptPortfolioName">Portfolio Name</label><input id="ptPortfolioName" value="My Portfolio" maxlength="60" placeholder="e.g. Long-Term Retirement"></div>
+<div style="display:grid;grid-template-columns:1fr 82px;gap:9px;margin:12px 0 14px"><input id="quickTicker" placeholder="Search ticker (e.g. VOO, AAPL, SCHD)" style="width:100%;padding:13px;border:1px solid var(--line);border-radius:9px;font-size:14px"><button class="btn" onclick="quickAdd()">Add</button></div>
+<div id="rows"></div>
+<div class="actions"><button class="btn outline" onclick="addRow()">＋ Add another security</button><button class="btn outline" onclick="sample()">▧ Load example portfolio</button></div><button class="btn analyze" onclick="analyzePortfolio()">Analyze My Portfolio →</button><p class="note">Production search will use live security data. No brokerage login or account balance is required.</p>
+<div id="result" class="result"><hr><div class="eyebrow">PORTFOLIO INTERPRETATION</div><h3 id="resultTitle"></h3><p id="summary" class="muted"></p><div id="roles"></div></div></div></div></section>
+
+<section class="section analysis-section" id="analysisResults"><div class="wrap"><div class="card analysis-panel" id="analysisPanel">
+ <div class="analysis-head"><div><div class="eyebrow">PORTFOLIO THESIS</div><h3 style="margin:4px 0">Your Six-Part Analysis</h3><p class="muted" id="analysisStamp"></p></div><span class="status" id="allocationStatus">100% allocated</span></div>
+ <div class="analysis-grid">
+  <div class="analysis-item"><h4>1. Structure</h4><p id="aStructure"></p></div>
+  <div class="analysis-item"><h4>2. Diversification</h4><p id="aDiversification"></p></div>
+  <div class="analysis-item"><h4>3. Concentration</h4><p id="aConcentration"></p></div>
+  <div class="analysis-item"><h4>4. Valuation</h4><p id="aValuation"></p></div>
+  <div class="analysis-item"><h4>5. Behavioral Durability</h4><p id="aBehavior"></p></div>
+  <div class="analysis-item thesis"><h4>6. Thesis</h4><p id="aThesis"></p></div>
+ </div>
+ <div class="snapshotbar"><button class="btn" onclick="saveThesisSnapshot()">Save Thesis Snapshot</button><button class="btn outline" onclick="compareLatest()">What Changed?</button><button class="btn outline" onclick="toggleHistory()">View History</button></div>
+ <div class="changebox" id="changeBox" style="display:none"></div>
+<div class="reviewbox" id="thesisReview">
+ <div class="eyebrow">THESIS REVIEW</div><h3 style="margin:4px 0">Has your thesis changed?</h3>
+ <p class="muted" id="reviewPrompt">Record why you changed the portfolio so the next review has context.</p>
+ <b>Why did you make this change?</b>
+ <div class="review-options">
+  <label class="review-option"><input type="radio" name="reason" value="Rebalanced to target"> Rebalanced back to my target allocation</label>
+  <label class="review-option"><input type="radio" name="reason" value="Investment thesis changed"> My investment thesis changed</label>
+  <label class="review-option"><input type="radio" name="reason" value="New information"> New information changed my view</label>
+  <label class="review-option"><input type="radio" name="reason" value="Tactical or temporary"> Tactical / temporary change</label>
+  <label class="review-option"><input type="radio" name="reason" value="Other"> Other</label>
+ </div>
+ <b>What changed in your thinking?</b>
+ <textarea id="reviewNote" placeholder="Optional note — capture the reasoning you may want to remember later."></textarea>
+ <b style="display:block;margin-top:12px">Thesis status</b>
+ <div class="review-status">
+  <label><input type="radio" name="thesisStatus" value="Unchanged"> Unchanged</label>
+  <label><input type="radio" name="thesisStatus" value="Modified"> Modified</label>
+  <label><input type="radio" name="thesisStatus" value="Replaced"> Replaced</label>
+ </div>
+ <button class="btn" onclick="saveThesisReview()">Save Review</button>
+ <div id="reviewSaved"></div>
+</div>
+<div class="history" id="snapshotHistory" style="display:none"></div>
+ <p class="note">Prototype analysis uses the local security classifications in this build. Production analysis will use the licensed/current security data layer.</p>
+</div></div></section>
+
+<section class="section" id="sixLenses"><div class="wrap"><div class="eyebrow">A CLEARER WAY TO SEE YOUR PORTFOLIO</div><h2>More than a list of holdings.</h2><p class="lead">Six key lenses turn your portfolio into a thesis you can understand and monitor.</p>
+<div class="lens-list">
+<div class="lens-row" onclick="openLens('structure')"><div class="lens-icon">▱</div><div class="lens-num">01</div><div class="lens-copy"><b>Structure</b><span>What anchors the portfolio and what acts as a satellite?</span></div><div class="lens-go">›</div></div>
+<div class="lens-row" onclick="openLens('overlap')"><div class="lens-icon">◎</div><div class="lens-num">02</div><div class="lens-copy"><b>Overlap & concentration</b><span>Where different holdings may stack the same exposure.</span></div><div class="lens-go">›</div></div>
+<div class="lens-row" onclick="openLens('durability')"><div class="lens-icon">◇</div><div class="lens-num">03</div><div class="lens-copy"><b>Thesis durability</b><span>What evidence matters—and what is merely price movement.</span></div><div class="lens-go">›</div></div>
+<div class="lens-row" onclick="openLens('risk')"><div class="lens-icon">▥</div><div class="lens-num">04</div><div class="lens-copy"><b>Risk & volatility</b><span>What could go wrong, and how much does it matter?</span></div><div class="lens-go">›</div></div>
+<div class="lens-row" onclick="openLens('horizon')"><div class="lens-icon">◷</div><div class="lens-num">05</div><div class="lens-copy"><b>Time horizon</b><span>Are your holdings aligned with your long-term argument?</span></div><div class="lens-go">›</div></div>
+<div class="lens-row" onclick="openLens('takeaways')"><div class="lens-icon">▤</div><div class="lens-num">06</div><div class="lens-copy"><b>Actionable takeaways</b><span>What to monitor, consider, or review.</span></div><div class="lens-go">›</div></div>
+</div><button class="btn lens-cta" onclick="document.getElementById('builder').scrollIntoView({behavior:'smooth'})">Analyze My Portfolio →</button>
+</div></section>
+
+<section id="lensLearning" class="section lens-detail" aria-live="polite"><div class="wrap lens-shell">
+<button class="lens-back" onclick="closeLens()">← Back to the portfolio analysis</button>
+<div class="eyebrow" id="lensEyebrow">PORTFOLIO LENS</div>
+<h2 id="lensTitle"></h2>
+<p class="lens-kicker" id="lensIntro"></p>
+<div class="lens-learn-grid">
+ <div class="lens-learn-card"><h3>What this lens asks</h3><p id="lensAsks"></p></div>
+ <div class="lens-learn-card"><h3>What to look for</h3><ul id="lensLook"></ul></div>
+ <div class="lens-learn-card"><h3>How to interpret it</h3><p id="lensInterpret"></p></div>
+ <div class="lens-learn-card"><h3>Common mistake</h3><p id="lensMistake"></p></div>
+</div>
+<div class="lens-example"><b>Example</b><p id="lensExample" style="margin:6px 0 0"></p></div>
+<div class="lens-apply"><h3>Apply this lens to your portfolio</h3><p id="lensApply"></p><button class="btn" onclick="applyLens()">See this in my portfolio →</button></div>
+</div></section>
+
+<section id="research" class="section"><div class="wrap"><div class="eyebrow">RESEARCH WORKSPACE</div><h2>Understand the security before judging the price.</h2><p class="lead">Research stocks and ETFs through the same disciplined workflow: identify the role, understand portfolio relationships, save what matters, then move individual companies into Deep Value when appropriate.</p>
+<div class="toolbox"><div class="searchline"><input id="researchTicker" placeholder="Search ticker or fund (e.g. VTI, AVUV, AAPL)"><button class="btn" onclick="runResearch()">Research →</button></div>
+<div class="quicklinks"><button class="chip" onclick="researchTicker('VTI')">VTI</button><button class="chip" onclick="researchTicker('VXUS')">VXUS</button><button class="chip" onclick="researchTicker('AVUV')">AVUV</button><button class="chip" onclick="researchTicker('AAPL')">AAPL</button><button class="chip" onclick="researchTicker('MSFT')">MSFT</button></div>
+<div id="researchResult" class="research-result"></div></div>
+<div class="watchbox research-watch"><div class="eyebrow">WATCHLIST</div><h3>Saved research</h3><p class="muted">Keep securities you want to revisit. Stocks can move from here into Deep Value; ETFs stay in Portfolio Research.</p><div id="watchList" class="watch-list"></div></div>
+</div></section>
+
+
+<section id="deepvalue" class="section"><div class="wrap">
+<div class="eyebrow">DEEP VALUE</div><h2>Find value. Save the thesis. Check what changed.</h2>
+<p class="lead">A Graham-inspired research workflow built around financial strength, normalized earning power, cash generation, valuation and margin of safety—not price momentum.</p>
+
+
+<div class="watchbox dv-start"><div class="eyebrow">ANALYZE A COMPANY</div><h3 style="margin:6px 0">Start a Deep Value review</h3>
+<p class="muted">Enter an individual company ticker. Portfolio Thesis will retrieve current company data and begin an automated Graham-style review.</p>
+<div class="searchline"><input id="dvTicker" placeholder="Enter company ticker (e.g. ADBE, EPAM)"><button class="btn" onclick="startDeepValue()">Start Review →</button></div>
+<div id="dvStartMsg" class="note"></div></div>
+<div class="card dv-queue"><div class="builder-head"><div><div class="eyebrow">RESEARCH QUEUE</div><h3>Deep Value Research Queue</h3><p class="muted">Companies being tracked for automated fundamental review. Ranking begins only after the Portfolio Thesis scoring model is validated.</p></div></div>
+<div id="dvRanking"></div><p class="note">Company ranking remains disabled while the expanded evidence score and normalized Margin-of-Safety model are being validated.</p></div>
+
+<div class="card dv-workspace">
+<div class="eyebrow">AUTOMATED DEEP VALUE REPORT</div>
+<h3 id="dvTitle">Select a company</h3>
+<p class="muted" id="dvIntro">Enter a ticker above to retrieve company data and build the first Portfolio Thesis value report.</p>
+<div id="dvLoading" class="dv-loading" style="display:none">Retrieving company financials…</div>
+<div id="dvError" class="note" style="display:none"></div>
+<div id="dvReport" style="display:none">
+  <div class="dv-company-head">
+    <div><div class="eyebrow" id="dvCompanySymbol"></div><h3 id="dvCompanyName" style="margin:5px 0"></h3></div>
+    <div class="dv-price"><b id="dvPrice">—</b><span id="dvMarketCap">—</span></div>
+  </div>
+  <div class="dv-metrics" id="dvMetrics"></div>
+  <div class="dv-scorecard">
+  <div class="dv-score-top">
+    <div><div class="eyebrow">DEEP VALUE SCORECARD</div><h3 style="margin:5px 0">Evidence-based assessment</h3></div>
+    <div style="text-align:right"><div class="dv-total"><b id="dvTotalScore">—</b><span>/100 evidence</span></div><small id="dvCompleteness" style="display:block;color:var(--muted);font-weight:800;margin-top:3px">—</small></div>
+  </div>
+  <div id="dvScoreRows"></div><div id="dvScoreGaps" class="dv-score-gaps"></div>
+  <div class="note">The calibrated evidence score uses five distinct categories and limits double-counting. Missing evidence is left unscored and shown through the completeness indicator rather than treated as a failure. Margin of Safety remains separate. This is research, not a buy/sell recommendation.</div>
+</div>
+<div class="dv-mos" id="dvMosPanel">
+  <div class="eyebrow">MARGIN OF SAFETY</div><div class="note" style="margin:8px 0 12px"><b>Three valuation scenarios:</b> Cautious, Normalized, and Stronger-Growth show how estimated value changes under different assumptions. The <b>Normalized Scenario</b> is the primary Margin-of-Safety reference; the other two are sensitivity cases, not price targets.</div>
+  <h3 style="margin:5px 0">Normalized free-cash-flow valuation</h3>
+  <p class="muted" id="dvMosIntro">A separate valuation layer centered on normalized base value, with conservative and favorable sensitivity scenarios.</p>
+  <div class="dv-mos-grid" id="dvMosGrid"></div>
+  <div class="dv-mos-summary" id="dvMosSummary"></div>
+  <div class="dv-mos-assumptions" id="dvMosAssumptions"></div>
+  <div class="dv-epx" id="dvEpx">
+    <div class="eyebrow">EARNINGS-POWER CROSS-CHECK</div>
+    <div class="dv-epx-box" id="dvEpxBox"></div>
+  </div>
+</div>
+<div class="dv-trends"><div class="eyebrow">5-YEAR EVIDENCE</div><div id="dvTrendRows"></div></div>
+  <div class="dv-analysis">
+    <div class="lensbox"><b>Financial strength</b><p id="dvStrengthText"></p></div>
+    <div class="lensbox"><b>Cash generation</b><p id="dvCashText"></p></div>
+    <div class="lensbox"><b>Earning power</b><p id="dvEarningsText"></p></div>
+    <div class="lensbox"><b>Valuation context</b><p id="dvValuationText"></p></div>
+  </div>
+  <div class="note">This report organizes financial evidence for research and education. It is not a buy/sell recommendation. Margin of Safety is modeled separately from the evidence score using explicit normalized free-cash-flow assumptions.</div>
+</div>
+</div></div></section>
+
+<section id="academy" class="section"><div class="wrap"><div class="eyebrow">PORTFOLIO THESIS ACADEMY</div><h2>Learn from the portfolio you actually own.</h2><p class="lead">The Builder can recommend lessons when it detects concepts worth understanding.</p>
+<div class="pt170-learnnav" role="navigation" aria-label="Learning library">
+<button class="active" onclick="pt170LearnPage('lessons',this)">Lessons</button><button onclick="pt170LearnPage('glossary',this)">Glossary</button><button onclick="pt170LearnPage('formulas',this)">Formulas</button><button onclick="pt175LearnPage('worksheets',this)">Worksheets</button>
+</div><div id="pt170Lessons" class="pt170-learnpage active">
+<div class="pt174-subnav" role="navigation" aria-label="Lesson category">
+  <button class="active" type="button" onclick="pt174LessonCategory('101',this)">Investing 101</button>
+  <button type="button" onclick="pt174LessonCategory('analysis',this)">Analysis</button>
+</div>
+<div id="pt174TrackIntro" class="pt174-trackintro"></div>
+<div class="library">
+<div class="lesson" data-lesson="assets" data-pt174-cat="101" onclick="openLesson('assets')"><div class="level">INVESTING 101</div><h3>Stocks, ETFs & Bonds</h3><p class="muted">Understand the basic building blocks before combining them.</p></div>
+<div class="lesson" data-lesson="roles" data-pt174-cat="101" onclick="openLesson('roles')"><div class="level">BUILDING A PORTFOLIO</div><h3>Core, Diversifier & Tilt</h3><p class="muted">Give each holding a job instead of collecting ticker symbols.</p></div>
+<div class="lesson" data-lesson="overlap" data-pt174-cat="101" onclick="openLesson('overlap')"><div class="level">BUILDING A PORTFOLIO</div><h3>Portfolio Overlap</h3><p class="muted">Why owning more funds doesn't automatically mean owning more diversification.</p></div>
+<div class="lesson" data-lesson="value" data-pt174-cat="101" onclick="openLesson('value')"><div class="level">VALUATION</div><h3>Price vs. Value</h3><p class="muted">Separate the quality of an asset from the price being paid.</p></div>
+<div class="lesson" data-lesson="thesis" data-pt174-cat="101" onclick="openLesson('thesis')"><div class="level">BEHAVIOR</div><h3>Staying With a Thesis</h3><p class="muted">Distinguish uncomfortable performance from evidence that the thesis changed.</p></div>
+<div class="lesson" data-lesson="concentration" data-pt174-cat="101" onclick="openLesson('concentration')"><div class="level">RISK</div><h3>Concentration Risk</h3><p class="muted">Understand when a deliberate position becomes a portfolio-dominating bet.</p></div>
+<div class="lesson" data-lesson="diversification" data-pt174-cat="101" onclick="openLesson('diversification')"><div class="level">BUILDING A PORTFOLIO</div><h3>What Diversification Really Means</h3><p class="muted">Diversify the sources of return and risk—not merely the number of holdings.</p></div>
+<div class="lesson" data-lesson="marketcap" data-pt174-cat="101" onclick="openLesson('marketcap')"><div class="level">INVESTING 101</div><h3>Market Cap & Portfolio Weight</h3><p class="muted">Understand why the largest companies can dominate a broad-market fund.</p></div>
+<div class="lesson" data-lesson="factors" data-pt174-cat="101" onclick="openLesson('factors')"><div class="level">PORTFOLIO CONSTRUCTION</div><h3>Factor Tilts</h3><p class="muted">Learn what size, value and profitability tilts actually change underneath the ticker.</p></div>
+<div class="lesson" data-lesson="multiples" data-pt174-cat="analysis" onclick="openLesson('multiples')"><div class="level">VALUATION</div><h3>Valuation Multiples</h3><p class="muted">Use P/E, P/B and EV/EBITDA as lenses—not answers.</p></div>
+<div class="lesson" data-lesson="fcf" data-pt174-cat="analysis" onclick="openLesson('fcf')"><div class="level">BUSINESS QUALITY</div><h3>Free Cash Flow</h3><p class="muted">Follow the cash a business can generate after maintaining its operations.</p></div>
+<div class="lesson" data-lesson="mos" data-pt174-cat="analysis" onclick="openLesson('mos')"><div class="level">VALUATION</div><h3>Margin of Safety</h3><p class="muted">Turn valuation uncertainty into a disciplined comparison between price and estimated value.</p></div>
+<div class="lesson" data-lesson="volatility" data-pt174-cat="101" onclick="openLesson('volatility')"><div class="level">RISK</div><h3>Volatility, Drawdowns & Risk</h3><p class="muted">Separate normal price movement from losses that can damage the investment thesis.</p></div>
+<div class="lesson" data-lesson="rebalancing" data-pt174-cat="101" onclick="openLesson('rebalancing')"><div class="level">PORTFOLIO MANAGEMENT</div><h3>Rebalancing</h3><p class="muted">Understand when restoring target weights is maintenance rather than market timing.</p></div>
+<div class="lesson" data-lesson="contribution" data-pt174-cat="101" onclick="openLesson('contribution')"><div class="level">PERFORMANCE</div><h3>Return vs. Portfolio Contribution</h3><p class="muted">See why a small holding can move sharply yet matter less than a modest move in a large holding.</p></div></div></div>
+<div id="pt170Glossary" class="pt170-learnpage"></div>
+<div id="pt170Formulas" class="pt170-learnpage"></div>
+<div id="lessonNav" class="lessonnav"><button class="lessonback" onclick="closeLesson()">← Back to Academy</button></div><div id="lessonView" class="lessonview"><div id="lessonContent"></div></div></div>
+<div id="pt175Worksheets" class="pt170-learnpage">
+  <div class="pt175-head">
+    <div class="eyebrow">PORTFOLIO THESIS WORKBOOK</div>
+    <h2>Work through the evidence.</h2>
+    <p>Interactive worksheets combine inputs, formulas, legends, interpretation and notes in one place. Saved work stays available in this browser.</p>
+  </div>
+  <div id="pt175WorksheetList" class="library"></div>
+  <div id="pt175WorksheetEditor" style="display:none"></div>
+</div>
+</section>
+
+<section id="issues" class="section"><div class="wrap"><div class="eyebrow">ISSUES</div><h2>Prices changed. Did the thesis?</h2><p class="lead">New member research connects market developments to durable investing principles without turning every headline into a trading signal.</p>
+<div class="issuecard"><div class="issue-meta">LATEST · ISSUE 002</div><h3>When diversification feels like it's failing</h3><p class="muted">A member issue about market leadership, patience and what should—or should not—change a long-term portfolio thesis.</p><span class="textlink" onclick="openIssue('002')">Read Issue 002 →</span></div>
+<div class="issuecard"><div class="issue-meta">ISSUE 001</div><h3>Global Ownership. Disciplined Balance.</h3><p class="muted">The Portfolio Thesis foundation: broad ownership, deliberate tilts and a process for staying disciplined.</p><span class="textlink" onclick="openIssue('001')">Read Issue 001 →</span></div>
+</div></section>
+
+
+<section id="library" class="section pt-library">
+  <div class="eyebrow">MEMBER LIBRARY</div>
+  <h2>Library</h2>
+  <p class="pt-library-intro">Your saved Portfolio Thesis work in one place.</p>
+  <div id="ptLibraryStatus" class="pt-library-status"></div>
+
+  <div class="pt228-library-tabs" role="tablist" aria-label="Library categories">
+    <button class="pt228-tab active" data-tab="portfolios" onclick="pt228ShowLibraryTab('portfolios')">Portfolios</button>
+    <button class="pt228-tab" data-tab="companies" onclick="pt228ShowLibraryTab('companies')">Companies</button>
+    <button class="pt228-tab" data-tab="funds" onclick="pt228ShowLibraryTab('funds')">Funds</button>
+    <button class="pt228-tab" data-tab="watchlist" onclick="pt228ShowLibraryTab('watchlist')">Watchlist</button>
+  </div>
+
+  <div id="pt228TabPortfolios" class="pt228-tab-panel active">
+    <div class="pt-library-block">
+      <div class="pt-library-head"><div><span>LIBRARY</span><h3>Portfolios</h3></div><button class="btn" onclick="ptGoPortfolio()">+ New portfolio</button></div>
+      <p class="pt-library-section-note">Each portfolio keeps its construction, latest report and review history together.</p>
+      <div id="ptLibraryPortfolios" class="pt-library-grid"><div class="pt-library-empty">No saved portfolios yet.</div></div>
+      <div id="ptLibraryPortfolioReports" style="display:none"></div>
+    </div>
+  </div>
+
+  <div id="pt228TabCompanies" class="pt228-tab-panel">
+    <div class="pt-library-block">
+      <div class="pt-library-head"><div><span>LIBRARY</span><h3>Companies</h3></div></div>
+      <p class="pt-library-section-note">Saved company research and Deep Value reports.</p>
+      <div id="ptLibraryDeepValueReports" class="pt-library-grid"><div class="pt-library-empty">No saved company research yet.</div></div>
+    </div>
+  </div>
+
+  <div id="pt228TabFunds" class="pt228-tab-panel">
+    <div class="pt-library-block">
+      <div class="pt-library-head"><div><span>LIBRARY</span><h3>Funds</h3></div></div>
+      <p class="pt-library-section-note">Saved ETF and fund research profiles.</p>
+      <div id="ptSavedResearchList" class="pt-library-grid"></div>
+    </div>
+  </div>
+
+  <div id="pt228TabWatchlist" class="pt228-tab-panel">
+    <div class="pt-library-block">
+      <div class="pt-library-head"><div><span>LIBRARY</span><h3>Watchlist</h3></div></div>
+      <div class="pt-watch-add">
+        <input id="ptWatchTicker" type="text" inputmode="text" autocomplete="off" placeholder="Enter ticker — ADBE, NVDA, VTI…" aria-label="Ticker to add to watchlist">
+        <button class="btn primary" onclick="ptAddWatch()">+ Add to Watchlist</button>
+      </div>
+      <div id="ptWatchMessage" class="pt-watch-message"></div>
+      <div id="ptLibraryWatchlist" class="pt-library-grid"><div class="pt-library-empty">No securities on your watchlist yet.</div></div>
+    </div>
+  </div>
+</section>
+<section id="join" class="section member"><div class="wrap member-grid"><div><div class="eyebrow" style="color:#9fcbbd">FOUNDING MEMBERSHIP</div><h2>Build a stronger investment process.</h2><p class="lead">Builder access, saved thesis history, security research, Issues and portfolio-linked Academy lessons.</p></div><div class="pricecard"><div class="price">$15 <small>/ month</small></div><p><b>Founding price protected while membership remains active.</b></p><p>Builder • Research • Issues • Academy • Thesis history</p><a class="btn" href="#" onclick="showJoinStatus();return false">Join Portfolio Thesis</a></div></div></section></main>
+<footer><div class="wrap">Portfolio Thesis — Educational content only. Not individualized investment, tax or legal advice. Investing involves risk, including loss of principal.</div></footer>
+
+<!-- ORIGINAL INLINE SCRIPT BLOCK 2 EXTRACTED TO app.js -->
+<div id="ptGeneratedReport">
+  <div class="pt-report-sitehead"><div class="pt-report-headinner"><button class="pt-report-logo" onclick="ptReportGoHome()"><b>Portfolio Thesis</b><span>Global Ownership. Disciplined Balance.</span></button><button class="pt-report-homebtn" onclick="ptReportGoHome()">Home</button></div></div>
+  <div class="ptr-wrap">
+    <div class="ptr-toolbar"><button class="ptr-back" onclick="closePortfolioReport()">← Back</button></div>
+    <div id="ptReportBody"></div>
+  </div>
+</div>
+
+
+<!-- ORIGINAL INLINE SCRIPT BLOCK 3 EXTRACTED TO app.js -->
+
+
+<div id="ptResearchGeneratedReport" style="display:none;background:#dfe3df;min-height:100vh;padding:10px 0 40px">
+  <div class="ptdv-wrap">
+    <div class="ptdv-toolbar"><button class="ptr-back" onclick="closeResearchReport()">← Back</button></div>
+    <div id="ptResearchReportBody"></div>
+  </div>
+</div>
+
+<div id="ptDVGeneratedReport"><div class="pt-report-sitehead"><div class="pt-report-headinner"><button class="pt-report-logo" onclick="ptReportGoHome()"><b>Portfolio Thesis</b><span>Global Ownership. Disciplined Balance.</span></button><button class="pt-report-homebtn" onclick="ptReportGoHome()">Home</button></div></div><div class="ptdv-wrap"><div class="ptdv-toolbar"><button class="ptr-back" onclick="closeDVReport()">← Back</button></div><div id="ptDVReportBody"></div></div></div>
+
+
+<!-- ORIGINAL INLINE SCRIPT BLOCK 4 EXTRACTED TO app.js -->
+
+
+<!-- ORIGINAL INLINE SCRIPT BLOCK 5 EXTRACTED TO app.js -->
+
+
+<!-- ORIGINAL INLINE SCRIPT BLOCK 6 EXTRACTED TO app.js -->
+
+
+<!-- ORIGINAL INLINE SCRIPT BLOCK 7 EXTRACTED TO app.js -->
+
+
+<!-- ORIGINAL STYLE BLOCK 29 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 8 EXTRACTED TO app.js -->
+
+
+<!-- ORIGINAL INLINE SCRIPT BLOCK 9 EXTRACTED TO app.js -->
+
+
+<!-- ORIGINAL INLINE SCRIPT BLOCK 10 EXTRACTED TO app.js -->
+
+<!-- ORIGINAL INLINE SCRIPT BLOCK 11 EXTRACTED TO app.js -->
+
+<!-- ORIGINAL INLINE SCRIPT BLOCK 12 EXTRACTED TO app.js -->
+
+<!-- ORIGINAL STYLE BLOCK 30 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 13 EXTRACTED TO app.js -->
+
+<!-- ORIGINAL STYLE BLOCK 31 EXTRACTED TO styles.css -->
+
+<!-- ORIGINAL INLINE SCRIPT BLOCK 14 EXTRACTED TO app.js -->
+
+
+<section id="researchUniverse" class="page">
+ <div class="pt-admin-wrap">
+  <div class="pt-admin-eyebrow">Portfolio Thesis Research · Internal</div>
+  <h1 class="pt-admin-title">Research Universe</h1>
+  <p class="pt-admin-sub">Portfolio Thesis's institutional research memory. This is separate from member watchlists and records non-personal security evidence, historical snapshots and research workflow status.</p>
+  <div class="pt-admin-grid">
+   <div class="pt-admin-stat"><b id="ptUniverseCount">0</b><span>Total securities</span></div>
+   <div class="pt-admin-stat"><b id="ptUniverseStocks">0</b><span>Companies</span></div>
+   <div class="pt-admin-stat"><b id="ptUniverseFunds">0</b><span>Funds / ETFs</span></div>
+   <div class="pt-admin-stat"><b id="ptUniverseSnapshots">0</b><span>Research snapshots</span></div>
+  </div>
+  <div class="pt-admin-tools">
+   <input id="ptUniverseSearch" placeholder="Search ticker, company or sector" oninput="ptRenderResearchUniverse()">
+   <select id="ptUniverseStatus" onchange="ptRenderResearchUniverse()">
+    <option value="all">All research states</option><option value="discovered">Discovered</option><option value="screening">Screening</option><option value="research_universe">Research Universe</option><option value="monitoring">Monitoring</option><option value="archived">Archived</option>
+   </select>
+   <button class="pt-admin-btn" onclick="ptLoadResearchUniverse()">Refresh</button>
+  </div>
+  <div id="ptResearchUniverseList" class="pt-universe-list"><div class="pt-admin-empty">Open the Research Universe to load securities.</div></div>
+  <div id="ptResearchRecord"></div>
+ </div>
+</section>
+
+<!-- ORIGINAL INLINE SCRIPT BLOCK 15 EXTRACTED TO app.js -->
+
+<!-- ORIGINAL INLINE SCRIPT BLOCK 16 EXTRACTED TO app.js -->
+
+
+<!-- ORIGINAL STYLE BLOCK 32 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 17 EXTRACTED TO app.js -->
+
+<!-- ORIGINAL INLINE SCRIPT BLOCK 18 EXTRACTED TO app.js -->
+
+
+<!-- ORIGINAL STYLE BLOCK 33 EXTRACTED TO styles.css -->
+
+<!-- ORIGINAL INLINE SCRIPT BLOCK 19 EXTRACTED TO app.js -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 20 EXTRACTED TO app.js -->
+
+
+<!-- ORIGINAL STYLE BLOCK 34 EXTRACTED TO styles.css -->
+
+<!-- V150 PREMIUM RESEARCH REPORT — publication-first renderer -->
+<!-- ORIGINAL STYLE BLOCK 35 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 21 EXTRACTED TO app.js -->
+
+<!-- V152: final binding override must load last -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 22 EXTRACTED TO app.js -->
+
+
+<!-- V153: report routing — generated report opens as the active full-screen view -->
+<!-- ORIGINAL STYLE BLOCK 36 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 23 EXTRACTED TO app.js -->
+
+<!-- V154: page-1 deduplication + recursive security-performance binding -->
+
+<!-- V161 FINAL OVERRIDE: live performance + nonrepetitive Issue-001-style fund scorecards -->
+<!-- ORIGINAL STYLE BLOCK 37 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 24 EXTRACTED TO app.js -->
+
+<!-- ORIGINAL INLINE SCRIPT BLOCK 25 EXTRACTED TO app.js -->
+
+<!-- ORIGINAL STYLE BLOCK 38 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 26 EXTRACTED TO app.js -->
+
+<!-- ORIGINAL STYLE BLOCK 39 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 27 EXTRACTED TO app.js -->
+
+
+<!-- ORIGINAL STYLE BLOCK 40 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 28 EXTRACTED TO app.js -->
+
+
+<!-- ORIGINAL STYLE BLOCK 41 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 29 EXTRACTED TO app.js -->
+
+
+
+<!-- ORIGINAL STYLE BLOCK 42 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 30 EXTRACTED TO app.js -->
+
+
+<!-- ORIGINAL STYLE BLOCK 43 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 31 EXTRACTED TO app.js -->
+
+
+<!-- ORIGINAL INLINE SCRIPT BLOCK 32 EXTRACTED TO app.js -->
+
+
+
+
+
+<!-- ORIGINAL STYLE BLOCK 44 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 33 EXTRACTED TO app.js -->
+
+
+
+<!-- ORIGINAL STYLE BLOCK 45 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 34 EXTRACTED TO app.js -->
+
+
+<!-- ORIGINAL STYLE BLOCK 46 EXTRACTED TO styles.css -->
+
+
+<!-- ORIGINAL STYLE BLOCK 47 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 35 EXTRACTED TO app.js -->
+
+<!-- ORIGINAL STYLE BLOCK 48 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 36 EXTRACTED TO app.js -->
+
+
+<!-- ORIGINAL STYLE BLOCK 49 EXTRACTED TO styles.css -->
+
+
+<!-- ORIGINAL INLINE SCRIPT BLOCK 37 EXTRACTED TO app.js -->
+
+
+<!-- ORIGINAL STYLE BLOCK 50 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 38 EXTRACTED TO app.js -->
+
+<!-- ORIGINAL STYLE BLOCK 51 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 39 EXTRACTED TO app.js -->
+
+
+<!-- ORIGINAL STYLE BLOCK 52 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 40 EXTRACTED TO app.js -->
+
+
+<!-- V203 — dynamic ETF evidence: known ETFs get ETF-specific roles/theses instead of generic portfolio-holding copy -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 41 EXTRACTED TO app.js -->
+
+
+<!-- V204 — ETF data-layer timing + request de-duplication
+     The report now waits for ETF evidence before rendering.
+     Repeated report-generation calls reuse the same evidence attempt instead
+     of immediately hitting the provider again. -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 42 EXTRACTED TO app.js -->
+
+
+
+<!-- V205 — Portfolio Review History / Since Your Last Review -->
+<!-- ORIGINAL STYLE BLOCK 53 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 43 EXTRACTED TO app.js -->
+
+
+<!-- V206 — Generate Report automatically saves/updates Saved Portfolios -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 44 EXTRACTED TO app.js -->
+
+
+<!-- V207 — generated-report navigation + one live report per saved portfolio -->
+<!-- ORIGINAL STYLE BLOCK 54 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 45 EXTRACTED TO app.js -->
+
+<!-- V209 — portfolio-specific review identity
+     Review history is keyed to the saved portfolio name rather than its ticker set,
+     so Brokerage Acct and Roth IRA retain independent baselines even when holdings overlap. -->
+
+
+<!-- V210 — Standalone Portfolio Review History -->
+<!-- ORIGINAL STYLE BLOCK 55 EXTRACTED TO styles.css -->
+<div id="ptV210Review" aria-hidden="true"><div class="pt210-head"><div class="pt210-brand">Portfolio Thesis</div><div class="pt210-actions"><button onclick="ptV210CloseReview(true)">Library</button><button onclick="ptV210CloseReview(false)">Home</button></div></div><div id="ptV210ReviewBody" class="pt210-wrap"></div></div>
+<!-- ORIGINAL INLINE SCRIPT BLOCK 46 EXTRACTED TO app.js -->
+
+
+
+<!-- V212 — Performance-first standalone Review History -->
+<!-- ORIGINAL STYLE BLOCK 56 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 47 EXTRACTED TO app.js -->
+
+<!-- V213 — Review History refreshes the portfolio automatically before comparison -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 48 EXTRACTED TO app.js -->
+
+
+<!-- V214 — Review History waits for one coherent fresh performance dataset -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 49 EXTRACTED TO app.js -->
+
+
+<!-- V215 — Review History current-price field recognition.
+     Isolated change: preserve synchronized 1M/YTD return and weighted-contribution logic,
+     while recognizing current/latest/end price fields returned by security-performance. -->
+
+<!-- V216 — Review History price source
+     security-performance exposes the internally consistent review price as
+     performance.latestAdjustedClose. No return or weighted-contribution
+     calculation was changed in this version. -->
+
+
+<!-- V217 — Prior-review performance comparison layer.
+     Adds a true current-vs-prior comparison to standalone Review History.
+     Existing V216 refresh, adjusted-close price, return, contribution and structural logic are unchanged. -->
+<!-- ORIGINAL STYLE BLOCK 57 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 50 EXTRACTED TO app.js -->
+
+
+<!-- V218 — clean unchanged prior-review comparisons; preserve V216 current performance -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 51 EXTRACTED TO app.js -->
+
+<!-- V219 — comparison refinement: unchanged reviews collapse to one useful status card -->
+<!-- ORIGINAL STYLE BLOCK 58 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 52 EXTRACTED TO app.js -->
+
+
+<!-- V220 — Stable structural reviews are concise; material changes still expand into detail.
+     No performance, price, contribution, or prior-review comparison calculations changed. -->
+
+<!-- ORIGINAL STYLE BLOCK 59 EXTRACTED TO styles.css -->
+<div id="ptResearchTransition" aria-live="polite" aria-hidden="true">
+ <div class="pt-research-shell">
+  <div class="pt-research-brand">Portfolio Thesis</div>
+  <div class="pt-research-kicker">PORTFOLIO RESEARCH</div>
+  <h1 class="pt-research-title">Building your Portfolio Thesis…</h1>
+  <p class="pt-research-sub">Turning the portfolio into a research-backed view of what you own, how the pieces interact and what matters now.</p>
+  <div class="pt-research-steps">
+   <div class="pt-research-step" data-step="1"><div class="pt-research-num">01</div><div class="pt-research-copy"><b>Classifying holdings</b><span>Identifying each holding’s role in the portfolio.</span></div><div class="pt-research-mark"></div></div>
+   <div class="pt-research-step" data-step="2"><div class="pt-research-num">02</div><div class="pt-research-copy"><b>Measuring exposures</b><span>Evaluating concentration, diversification and portfolio structure.</span></div><div class="pt-research-mark"></div></div>
+   <div class="pt-research-step" data-step="3"><div class="pt-research-num">03</div><div class="pt-research-copy"><b>Analyzing relationships</b><span>Looking for overlap and how the holdings work together.</span></div><div class="pt-research-mark"></div></div>
+   <div class="pt-research-step" data-step="4"><div class="pt-research-num">04</div><div class="pt-research-copy"><b>Evaluating the evidence</b><span>Connecting performance and fund evidence to each holding’s role.</span></div><div class="pt-research-mark"></div></div>
+   <div class="pt-research-step" data-step="5"><div class="pt-research-num">05</div><div class="pt-research-copy"><b>Building your thesis</b><span>Assembling the finished Portfolio Thesis Report.</span></div><div class="pt-research-mark"></div></div>
+  </div>
+ </div>
+</div>
+<!-- ORIGINAL INLINE SCRIPT BLOCK 53 EXTRACTED TO app.js -->
+<!-- V229 — Global UI rhythm + Academy consolidation --><!-- ORIGINAL STYLE BLOCK 60 EXTRACTED TO styles.css -->
+<!-- V232 — Global landing clearance + unified Library/Academy tabs -->
+<!-- ORIGINAL STYLE BLOCK 61 EXTRACTED TO styles.css -->
+
+<!-- ORIGINAL INLINE SCRIPT BLOCK 54 EXTRACTED TO app.js -->
+
+
+<!-- V233 — menu navigation landing fix -->
+<!-- ORIGINAL STYLE BLOCK 62 EXTRACTED TO styles.css -->
+
+<!-- ORIGINAL INLINE SCRIPT BLOCK 55 EXTRACTED TO app.js -->
+
+
+<!-- V234 — true page-level menu landings -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 56 EXTRACTED TO app.js -->
+
+
+<!-- V236 — independent section navigation -->
+<!-- ORIGINAL STYLE BLOCK 63 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 57 EXTRACTED TO app.js -->
+
+
+<!-- V238 — company page empty-state cleanup -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 58 EXTRACTED TO app.js -->
+
+
+
+
+
+<!-- V243: instant independent-page navigation -->
+<!-- ORIGINAL STYLE BLOCK 64 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 59 EXTRACTED TO app.js -->
+
+
+<!-- V247: curriculum order and path synchronization -->
+<!-- ORIGINAL STYLE BLOCK 65 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 60 EXTRACTED TO app.js -->
+
+
+<!-- V248: keep knowledge check after all lessons -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 61 EXTRACTED TO app.js -->
+
+
+<!-- V249: glossary reference improvements -->
+<!-- ORIGINAL STYLE BLOCK 66 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 62 EXTRACTED TO app.js -->
+
+
+<!-- V253: printable formula sheet -->
+<!-- ORIGINAL STYLE BLOCK 67 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 63 EXTRACTED TO app.js -->
+
+
+
+<!-- V256: canonical Academy tabs + worksheet frame -->
+<!-- ORIGINAL STYLE BLOCK 68 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 64 EXTRACTED TO app.js -->
+
+
+<!-- ORIGINAL STYLE BLOCK 69 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 65 EXTRACTED TO app.js -->
+
+<!-- ORIGINAL STYLE BLOCK 70 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 66 EXTRACTED TO app.js -->
+
+
+<!-- V270 — Fund Evidence structural binding -->
+<!-- ORIGINAL STYLE BLOCK 71 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 67 EXTRACTED TO app.js -->
+
+
+<!-- V271 — direct Fund Evidence binding from the verified portfolio backend object -->
+<!-- ORIGINAL STYLE BLOCK 72 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 68 EXTRACTED TO app.js -->
+
+
+
+
+<!-- V279 — stable report handoff: keep the existing research transition above the report until generation resolves -->
+<!-- ORIGINAL STYLE BLOCK 73 EXTRACTED TO styles.css -->
+
+
+<!-- V280 — route individual securities to Deep Value instead of Fund Evidence -->
+<!-- ORIGINAL STYLE BLOCK 74 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 69 EXTRACTED TO app.js -->
+
+
+<!-- V288 — mixed-portfolio summary + individual-security performance continuity -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 70 EXTRACTED TO app.js -->
+<!-- ORIGINAL STYLE BLOCK 75 EXTRACTED TO styles.css -->
+
+<!-- V289 — restore Allocation × Performance and tighten Holding Evidence opening -->
+<!-- ORIGINAL STYLE BLOCK 76 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 71 EXTRACTED TO app.js -->
+
+
+
+<!-- V295 — non-blocking Library opener; report pipeline untouched -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 72 EXTRACTED TO app.js -->
+
+<!-- V296 — allocation display order only: largest portfolio weight first -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 73 EXTRACTED TO app.js -->
+</body>
+</html>
+
+<!-- ORIGINAL STYLE BLOCK 77 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 74 EXTRACTED TO app.js -->
+<!-- ORIGINAL STYLE BLOCK 78 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 75 EXTRACTED TO app.js -->
+
+<!-- ORIGINAL STYLE BLOCK 79 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 76 EXTRACTED TO app.js -->
+
+<!-- V269 — verified portfolio backend binding (look-through + exposures) -->
+<!-- ORIGINAL STYLE BLOCK 80 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 77 EXTRACTED TO app.js -->
+
+
+<!-- V272 — Fund structural snapshot binding -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 78 EXTRACTED TO app.js -->
+
+
+
+
+
+
+
+<!-- V282 — one evidence sequence, allocation order, Deep Value uses Fund Evidence card format -->
+<!-- ORIGINAL STYLE BLOCK 81 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 79 EXTRACTED TO app.js -->
+
+
+<!-- V283 — restore V281 fast Library opening without carrying forward V281 report changes -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 80 EXTRACTED TO app.js -->
+
+
+<!-- V284 — final Deep Value card normalization after async research settles -->
+<!-- ORIGINAL STYLE BLOCK 82 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 81 EXTRACTED TO app.js -->
+
+
+<!-- V285 — Deep Value card uses the exact Fund Evidence typography/classes -->
+<!-- ORIGINAL STYLE BLOCK 83 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 82 EXTRACTED TO app.js -->
+
+
+<!-- V286 — exact full-card match for the original asynchronous Deep Value shell -->
+<!-- ORIGINAL STYLE BLOCK 84 EXTRACTED TO styles.css -->
+
+
+<!-- V287 — generic dynamic company-research transport for every individual security -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 83 EXTRACTED TO app.js -->
+
+<!-- V292 — idempotent effective exposure + evidence-based company synthesis; preserves V291 ticker validation -->
+<!-- ORIGINAL STYLE BLOCK 85 EXTRACTED TO styles.css -->
+<!-- ORIGINAL INLINE SCRIPT BLOCK 84 EXTRACTED TO app.js -->
