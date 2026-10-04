@@ -1,0 +1,312 @@
+{
+  "source_file": "app.js",
+  "purpose": "Polsia source-audit chunks sized to reduce response truncation",
+  "split_rule": "Sequential, line-boundary-only split; no intentional rewriting, reformatting, or reordering.",
+  "target_bytes_per_chunk": 15360,
+  "source_sha256": "ae1e04c13e309def4ed7fa7b2b0ff24ccf53e4dc7548ed94a4efeeec0d5d3674",
+  "source_lines": 6739,
+  "chunk_count": 43,
+  "chunks": [
+    {
+      "file": "polsia-01.js",
+      "start_line": 1,
+      "end_line": 119,
+      "bytes": 15346,
+      "sha256": "6ad636b87f690ba424e8f64df5daa462a396ada65ac96e739c1411e487a734be"
+    },
+    {
+      "file": "polsia-02.js",
+      "start_line": 120,
+      "end_line": 331,
+      "bytes": 15262,
+      "sha256": "4c98a81731565f53b1646618b908d9bf7c5a69773865086e33aee0cb61a00dcc"
+    },
+    {
+      "file": "polsia-03.js",
+      "start_line": 332,
+      "end_line": 553,
+      "bytes": 15216,
+      "sha256": "f1b1aacd4586f3c6f21a953bc84e1c5d55aa7fe8940e7cdfd446016976aab80c"
+    },
+    {
+      "file": "polsia-04.js",
+      "start_line": 554,
+      "end_line": 726,
+      "bytes": 15239,
+      "sha256": "b13e07f990d4177f17601afeab3b352be87e6a517aa6d3488d1f6291dc28eed0"
+    },
+    {
+      "file": "polsia-05.js",
+      "start_line": 727,
+      "end_line": 862,
+      "bytes": 15058,
+      "sha256": "a20ac62bda20f584ac4fe16390c1292ef5dbe2d7709ea6a51289679ee2897d66"
+    },
+    {
+      "file": "polsia-06.js",
+      "start_line": 863,
+      "end_line": 989,
+      "bytes": 15297,
+      "sha256": "346feccb637dd99631a26dc1b7ef6e1af5aa938f534db996d7293c5b9fdb2ba0"
+    },
+    {
+      "file": "polsia-07.js",
+      "start_line": 990,
+      "end_line": 1180,
+      "bytes": 15325,
+      "sha256": "bfa48714d647394ee90b7e18de22dbae93f13d9a12ee85a95563d02746e84edf"
+    },
+    {
+      "file": "polsia-08.js",
+      "start_line": 1181,
+      "end_line": 1336,
+      "bytes": 15342,
+      "sha256": "5a03ac8872cd59e94938af56b9e058726336b5260dc00053753ddac72f10fc73"
+    },
+    {
+      "file": "polsia-09.js",
+      "start_line": 1337,
+      "end_line": 1447,
+      "bytes": 14873,
+      "sha256": "63e1551a4fc1cc4cfb96af333e67aaf79b57e7c95047245bcb228cdfceb3be17"
+    },
+    {
+      "file": "polsia-10.js",
+      "start_line": 1448,
+      "end_line": 1538,
+      "bytes": 14970,
+      "sha256": "417569dbe756b95a01c6745b26bd14fd5f9a601e3fc45a81a3bc1faacdf882e4"
+    },
+    {
+      "file": "polsia-11.js",
+      "start_line": 1539,
+      "end_line": 1563,
+      "bytes": 14542,
+      "sha256": "2383926ee79783d93942527b0305d5db468c2645d2d428c4d0c1f1c11f538223"
+    },
+    {
+      "file": "polsia-12.js",
+      "start_line": 1564,
+      "end_line": 1686,
+      "bytes": 15316,
+      "sha256": "6e4627dc0849fad54fbcf6a51cd576dbe2faa7384ba748ae825ad2be9c43474a"
+    },
+    {
+      "file": "polsia-13.js",
+      "start_line": 1687,
+      "end_line": 1851,
+      "bytes": 14709,
+      "sha256": "30da7176dc507792c8560a23bf1758ec38e66380aa538fd7621e4bc68a60c5e5"
+    },
+    {
+      "file": "polsia-14.js",
+      "start_line": 1852,
+      "end_line": 2030,
+      "bytes": 15321,
+      "sha256": "87293c74612fc62e8d609f25d1d4f6f1fe1f6e2e45695783582bfd759f2f3e51"
+    },
+    {
+      "file": "polsia-15.js",
+      "start_line": 2031,
+      "end_line": 2266,
+      "bytes": 15332,
+      "sha256": "a5ab5710c8648c3890c0311bf7e2213e7a4071e42c98f4f12deeeb58f67fbfbd"
+    },
+    {
+      "file": "polsia-16.js",
+      "start_line": 2267,
+      "end_line": 2500,
+      "bytes": 15357,
+      "sha256": "0080421186931b36c5bb9eaeaba3378c22da6f50ceb99acfcd812498640a998d"
+    },
+    {
+      "file": "polsia-17.js",
+      "start_line": 2501,
+      "end_line": 2676,
+      "bytes": 15288,
+      "sha256": "30ba11bddfa5b33173317ebd1ee292797dd18de72570cafc070e4f3cabe5bc86"
+    },
+    {
+      "file": "polsia-18.js",
+      "start_line": 2677,
+      "end_line": 2788,
+      "bytes": 15064,
+      "sha256": "502a84daed2cc0e413168f6095c2678c30f48692343c0eb3e619ae524a806ca1"
+    },
+    {
+      "file": "polsia-19.js",
+      "start_line": 2789,
+      "end_line": 2861,
+      "bytes": 15323,
+      "sha256": "720886767c62689d492f12742f4484a3af7db58362508a03050cb408aac09167"
+    },
+    {
+      "file": "polsia-20.js",
+      "start_line": 2862,
+      "end_line": 2920,
+      "bytes": 14916,
+      "sha256": "1d019fd471904944d31cb65df9f7de835119a0c1938574cbd25496f308d56a06"
+    },
+    {
+      "file": "polsia-21.js",
+      "start_line": 2921,
+      "end_line": 3006,
+      "bytes": 15187,
+      "sha256": "53b0c989f772b4ed6b79cadc6b4921d85b1daf9f34227f4cd41c8850f1424bc1"
+    },
+    {
+      "file": "polsia-22.js",
+      "start_line": 3007,
+      "end_line": 3132,
+      "bytes": 15208,
+      "sha256": "64c8700d03e51e1f0cc7849d9cb1bf35cc4533853b8042578a9a761925f785dc"
+    },
+    {
+      "file": "polsia-23.js",
+      "start_line": 3133,
+      "end_line": 3254,
+      "bytes": 11253,
+      "sha256": "8f51506973304532e0484fe45492269ef5d3153c49d2ea7710b2ef5392d7b1b2"
+    },
+    {
+      "file": "polsia-24.js",
+      "start_line": 3255,
+      "end_line": 3296,
+      "bytes": 14286,
+      "sha256": "6acaa2d29f33d4279582f82f2c97944723ebcb0ec6a56d5cc80f13158638682d"
+    },
+    {
+      "file": "polsia-25.js",
+      "start_line": 3297,
+      "end_line": 3399,
+      "bytes": 15045,
+      "sha256": "a503cbb6119c8940e349cf79667f9f958d68ac6d7e0f5c6289488e8a8e53aba0"
+    },
+    {
+      "file": "polsia-26.js",
+      "start_line": 3400,
+      "end_line": 3522,
+      "bytes": 15326,
+      "sha256": "dd9d89ef55e53f74918220581e383cb5db98747f39a20935a6d7ba7caadec204"
+    },
+    {
+      "file": "polsia-27.js",
+      "start_line": 3523,
+      "end_line": 3700,
+      "bytes": 15112,
+      "sha256": "e3d3a7867e4e17e97174e6ea5aa04910b237303d0599f509712b03d3e2adc443"
+    },
+    {
+      "file": "polsia-28.js",
+      "start_line": 3701,
+      "end_line": 3935,
+      "bytes": 15354,
+      "sha256": "c63e34cf6e7c9cb5871373a81a3d3ba3cc95b44784a0ba40225f3b279e125dfa"
+    },
+    {
+      "file": "polsia-29.js",
+      "start_line": 3936,
+      "end_line": 4049,
+      "bytes": 15340,
+      "sha256": "bd055669af0cd9e1776c33c1259ca9bfb866aeea5621868256abce80bdfded55"
+    },
+    {
+      "file": "polsia-30.js",
+      "start_line": 4050,
+      "end_line": 4196,
+      "bytes": 14770,
+      "sha256": "64476e7f864849f423fe7d222d161bee9124fba8edaa4f9410e5892bb82c02da"
+    },
+    {
+      "file": "polsia-31.js",
+      "start_line": 4197,
+      "end_line": 4355,
+      "bytes": 15034,
+      "sha256": "15b1e1fa6443b8ea8ae1fa026d4f063fb4a021a9584062f449db9c6616c65535"
+    },
+    {
+      "file": "polsia-32.js",
+      "start_line": 4356,
+      "end_line": 4561,
+      "bytes": 15359,
+      "sha256": "701220aa87b47aac9416368cd40f720bffbe7dda6918bb2d2d0bc6ea37f94d14"
+    },
+    {
+      "file": "polsia-33.js",
+      "start_line": 4562,
+      "end_line": 4837,
+      "bytes": 15354,
+      "sha256": "927b2d5d6915ddd8d6d499f36a8eb369c0101943c9cb31669aecf843c863aab6"
+    },
+    {
+      "file": "polsia-34.js",
+      "start_line": 4838,
+      "end_line": 5284,
+      "bytes": 15359,
+      "sha256": "f9aecf94c52ef0b29cc0838197fa7e5eebf0115657b6d4a4a291e4783c47edde"
+    },
+    {
+      "file": "polsia-35.js",
+      "start_line": 5285,
+      "end_line": 5530,
+      "bytes": 14935,
+      "sha256": "330eec99261d3a8c35191803080af5c475ff42b93a654da87d3a5417b1947090"
+    },
+    {
+      "file": "polsia-36.js",
+      "start_line": 5531,
+      "end_line": 5648,
+      "bytes": 15331,
+      "sha256": "6c6becba7e0437b7588126123168b7f50d57774b28aa0d4938b541f0f2723856"
+    },
+    {
+      "file": "polsia-37.js",
+      "start_line": 5649,
+      "end_line": 5835,
+      "bytes": 15302,
+      "sha256": "c134bedd044d94c039e1cca698aca5bded10ade3c6679de4a1b655df4e88d31d"
+    },
+    {
+      "file": "polsia-38.js",
+      "start_line": 5836,
+      "end_line": 6031,
+      "bytes": 15197,
+      "sha256": "26e7fc7c5d5cef23aabf4a99df6cd4a6c0ab3065abb6058cb9c2adc55d0cd088"
+    },
+    {
+      "file": "polsia-39.js",
+      "start_line": 6032,
+      "end_line": 6062,
+      "bytes": 14886,
+      "sha256": "ad5d4ef987ce0327bdf5d9668648601c825759a3a0dc34352d5bec00f3cc0d87"
+    },
+    {
+      "file": "polsia-40.js",
+      "start_line": 6063,
+      "end_line": 6208,
+      "bytes": 15356,
+      "sha256": "7c552501b4f5605d021473b5e10b77218fd5db417c746aa1e716c33be09a30aa"
+    },
+    {
+      "file": "polsia-41.js",
+      "start_line": 6209,
+      "end_line": 6394,
+      "bytes": 15204,
+      "sha256": "2bc0b6cf504a07e819872262629f28dbc31443fba73f31905e3f019256bb9cb7"
+    },
+    {
+      "file": "polsia-42.js",
+      "start_line": 6395,
+      "end_line": 6706,
+      "bytes": 15329,
+      "sha256": "0e101328515e14dd8f9cc8119a8228a02f4bc553ffb6cdf52f7c8fc3731230a0"
+    },
+    {
+      "file": "polsia-43.js",
+      "start_line": 6707,
+      "end_line": 6739,
+      "bytes": 2828,
+      "sha256": "b5ee43b9011575a9d014200c7359ef4da4f19f18a7c9a88a9b0908da6417ddb9"
+    }
+  ]
+}
